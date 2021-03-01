@@ -19,7 +19,7 @@ print(f"Tip amount: ${tip_amount}")
 #convert total bill and tip amount to floats so they can be added
 total_bill_float = float(total_bill)
 tip_amount_float = float(tip_amount)
-tip_and_total = (total_bill_float+tip_amount_float)
+tip_and_total = "%.2f" % round(total_bill_float+tip_amount_float+(total_bill_float*.10))#Included is sales tax of 10% 
 print(f"Your bill including tip is: ${tip_and_total}")
 #Print what each person needs to pay
 print(f"Each person owes: ${payment_per_person} No, your buddy did not forget his wallet so make sure he pays up!")
